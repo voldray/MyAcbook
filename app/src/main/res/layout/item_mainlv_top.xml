@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f3f3f3">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/main_recordbtn_bg"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/p3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_mainlv_top_tv_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_mainlv_top_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="@string/budget"
+                android:onClick="onClick"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_mainlv_top_tv_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="￥ 0"
+                android:layout_gravity="center"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/item_mainlv_top_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/month_out"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:textSize="19sp"/>/>
+        </LinearLayout>
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/item_mainlv_top_iv_hide"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:src="@drawable/ih_show"-->
+        <!--            android:layout_alignTop="@id/item_mainlv_top_tv_out"/>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_mainlv_top_tv_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="￥ 0" />
+
+            <TextView
+                android:id="@+id/item_mainlv_top_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/month_in"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/item_mainlv_top_tv4"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:drawableLeft="@drawable/ih_biaoge"-->
+        <!--            android:layout_below="@id/item_mainlv_top_tv2"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="@string/see_excel"-->
+        <!--            android:textSize="20dp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textColor="@color/green_006400"-->
+        <!--            android:drawablePadding="10dp"/>-->
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_mainlv_top_tv_day"
+            android:background="@drawable/main_recordbtn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="今日支出 ￥0     收入 ￥0"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

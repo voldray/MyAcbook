@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f3f3f3">
+
+    <RelativeLayout
+        android:id="@+id/main_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/img"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/main_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_top_layout"
+        android:padding="10dp"
+        android:divider="@null"
+        android:dividerHeight="6dp"
+        android:scrollbars="none"
+        android:background="@color/grey_f3f3f3"/>
+
+        <Button
+            android:id="@+id/main_btn_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:textSize="23dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/main_recordbtn_bg"
+            android:text="记"
+            />
+
+        <Button
+            android:id="@+id/main_iv_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/main_recordbtn_bg"
+            android:textSize="23dp"
+            android:onClick="onClick"
+            android:text="搜"
+            />
+
+        <Button
+            android:id="@+id/main_btn_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/main_recordbtn_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="+"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="40dp" />
+
+
+</RelativeLayout>
